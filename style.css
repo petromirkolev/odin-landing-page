@@ -4,14 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .header,
 .body,
 footer {
   background-color: #1f2937;
   color: white;
 }
-
 .header {
   padding-top: 15px;
   display: flex;
@@ -28,7 +26,7 @@ footer {
   gap: 20px;
 }
 .body {
-  padding: 150px;
+  padding: 120px;
   display: flex;
 }
 .body-left-section {
@@ -55,10 +53,88 @@ footer {
   transform: scale(1.1);
 }
 .body .img-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   width: 50%;
   height: 200px;
-  text-align: center;
   margin: auto;
   background-color: gray;
+}
+.random-info h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.random-info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.sections div {
+  justify-content: space-around;
+  border: 5px solid #3882f6;
+  border-radius: 15px;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 10px;
+}
+.inspirational-quote {
+  padding: 100px;
+  height: 400px;
+  background-color: #e5e7eb;
+}
+.inspirational-quote p {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 100;
+  font-style: italic;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.inspirational-quote h3 {
+  font-weight: 900;
+  font-size: 25px;
+  text-align: right;
+  padding-top: 25px;
+  padding-right: 200px;
+}
+.call-to-action {
+  color: white;
+  background-color: #3882f6;
+  margin: 100px 200px;
+  padding: 50px 150px 50px 150px;
+  border-radius: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.call-to-action h3 {
+  font-size: 25px;
+}
+.call-to-action p {
+  color: #f9faf8;
+}
+.call-to-action button {
+  font-size: 20px;
+  font-weight: 900;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3882f6;
+  transition: transform 100ms ease-in-out;
+}
+.call-to-action button:hover {
+  transform: scale(1.1);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
