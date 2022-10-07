@@ -133,8 +133,16 @@ footer {
   transform: scale(1.1);
 }
 footer {
+  text-align: center;
   display: flex;
-  justify-content: center;
+  margin-bottom: 10px;
+  height: 50px;
+  font-family: monospace;
   align-items: center;
-  height: 100px;
+  justify-content: center;
+  margin-top: -5px;
+  gap: 10px;
+}
+footer img:hover {
+  transform: scale(1.4);
 }
