@@ -12,14 +12,11 @@ footer {
 }
 .header {
   padding-top: 15px;
+  color: #f9faf8;
   display: flex;
   justify-content: space-around;
 }
 
-.header h2 {
-  font-size: 24px;
-  color: #f9faf8;
-}
 .header ul {
   list-style: none;
   display: flex;
@@ -38,21 +35,23 @@ footer {
   font-size: 48px;
   font-weight: 900;
 }
-.body-left-section button {
+.body-left-section button,
+.call-to-action button {
   font-size: 20px;
   font-weight: 900;
   margin-top: 20px;
   padding: 10px;
-  border: none;
+  border: 2px solid white;
   border-radius: 10px;
   color: white;
   background-color: #3882f6;
   transition: transform 100ms ease-in-out;
 }
-.body-left-section button:hover {
+.body-left-section button:hover,
+.call-to-action button:hover {
   transform: scale(1.1);
 }
-.body .img-placeholder {
+.img-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +82,12 @@ footer {
   margin-bottom: 10px;
 }
 .inspirational-quote {
+  color: #1f2937;
   padding: 100px;
   height: 400px;
   background-color: #e5e7eb;
 }
-.inspirational-quote p {
-  font-size: 36px;
+.inspirational-quote h1 {
   color: #1f2937;
   font-weight: 100;
   font-style: italic;
@@ -113,25 +112,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.call-to-action h3 {
-  font-size: 25px;
-}
-.call-to-action p {
-  color: #f9faf8;
-}
-.call-to-action button {
-  font-size: 20px;
-  font-weight: 900;
-  border: 2px solid white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  background-color: #3882f6;
-  transition: transform 100ms ease-in-out;
-}
-.call-to-action button:hover {
-  transform: scale(1.1);
-}
 footer {
   text-align: center;
   display: flex;
@@ -145,4 +125,119 @@ footer {
 }
 footer img:hover {
   transform: scale(1.4);
+}
+/* Mobile view */
+@media screen and (max-width: 500px) {
+  .header {
+    padding-top: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header ul {
+    display: inline-block;
+  }
+  .body {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body-left-section {
+    width: 100%;
+    padding-right: 100px;
+  }
+  .body-left-section button,
+  .call-to-action button {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: #3882f6;
+    transition: transform 100ms ease-in-out;
+  }
+  .body-left-section button:hover,
+  .call-to-action button:hover {
+    transform: scale(1.1);
+  }
+  .img-placeholder {
+    display: bl;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    width: auto;
+    background-color: gray;
+  }
+  .random-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .random-info h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .random-info-boxes {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .random-info-boxes p {
+    margin-bottom: 10px;
+  }
+  .sections div {
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .inspirational-quote {
+    display: none;
+    display: in;
+    flex-direction: column;
+    color: #1f2937;
+    background-color: #e5e7eb;
+  }
+  .inspirational-quote h1 {
+    color: #1f2937;
+    font-weight: 100;
+    font-style: italic;
+  }
+  .inspirational-quote h3 {
+    font-weight: 900;
+    font-size: 25px;
+    text-align: right;
+  }
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #3882f6;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+    height: 150px;
+  }
+  footer {
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    height: 50px;
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    gap: 10px;
+  }
+  footer img:hover {
+    transform: scale(1.4);
+  }
 }
