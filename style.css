@@ -40,8 +40,8 @@ body {
   background-color: #1f2937;
   padding: 6% 10%;
   display: flex;
+  align-items: center;
   color: #f9faf8;
-  height: 30vh;
 }
 .main-1-left {
   flex: 1;
@@ -49,20 +49,34 @@ body {
 }
 .main-1-left > h1 {
   font-size: 50px;
+  padding: 0 40% 1% 0;
   color: #f9faf8;
 }
 .main-1-left > p {
   font-size: 24px;
   color: #e5e7eb;
+  padding: 0 0 2% 0;
 }
+.main-1-left > button {
+  background-color: #3882f6;
+  color: white;
+  font-size: 20px;
+  padding: 1% 4%;
+  border-radius: 7px;
+  border: none;
+}
+
 .main-1-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
+  height: 30vh;
   background-color: gray;
 }
 .main-1-right > p {
-  font-size: 30px;
+  font-size: 24px;
   color: #f9faf8;
-  text-align: center;
 }
 .footer {
   background-color: hsl(215, 28%, 17%);
