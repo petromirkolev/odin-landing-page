@@ -36,7 +36,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-.main-element-1 {
+.main-1 {
   background-color: #1f2937;
   padding: 6% 10%;
   display: flex;
@@ -73,14 +73,80 @@ body {
   flex: 1;
   height: 30vh;
   background-color: gray;
+  border-radius: 10px;
 }
 .main-1-right > p {
   font-size: 24px;
   color: #f9faf8;
 }
+
 .footer {
   background-color: hsl(215, 28%, 17%);
   color: #f9faf8;
   padding: 2% 0%;
   text-align: center;
+}
+.main-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0 10% 0;
+}
+.me2-images {
+  display: flex;
+}
+
+.me2-image-1,
+.me2-image-2,
+.me2-image-3,
+.me2-image-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me2-img-1-placeholder,
+.me2-img-2-placeholder,
+.me2-img-3-placeholder,
+.me2-img-4-placeholder {
+  margin: 15% 0 5% 0;
+  border: 5px solid #3882f6;
+  border-radius: 20px;
+  width: 20vh;
+  height: 20vh;
+}
+.main-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #e5e7eb;
+  padding: 10% 20%;
+}
+.m3-quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+}
+.main-4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  color: white;
+  margin: 5% 15%;
+  padding: 3% 0;
+  border-radius: 10px;
+}
+#p1 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.me4-btn {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 5% 10%;
+  width: 7vw;
 }
